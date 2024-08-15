@@ -1,0 +1,496 @@
+@import 'var';
+@import 'mixin';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-image: url(../img/bg_photo.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: 35% 30%;
+}
+.bckgrnd{
+    background-color: $bgColor;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.lg-top{
+    margin-top: 20px;
+}
+.logo h3{
+    font-size: 34px;
+    color: $Color;
+    font-weight: 400;
+    font-family: "Raleway";
+} 
+.logo img{
+    height: 55px;
+}
+.nav h4{
+    margin-top: 40px;
+    font-size: 14px;
+    color: $Color;
+    font-weight: 500;
+}
+.nav h4:hover{
+    color: $hovCol;
+    cursor: pointer;
+}
+.title{
+    padding: 320px 0 360px 0;
+    color: $Color;
+    text-align: center;
+}
+.title p{
+    width: 600px;
+    margin: auto;
+}
+.title h1{
+    font-size: 52px;
+    font-weight: 800;
+    font-family: "Raleway";
+}
+.title p{
+  @include p;
+}
+.btn{
+    margin-top: 60px;
+    @include btn;
+}
+.main1{
+    text-align: center;
+    padding: 80px 0 115px;
+}
+.main1 h3{
+    font-size: 22px;
+    color: #555555;
+    font-weight: 600;
+    font-family: "Raleway";
+    padding: 30px 0 25px;
+    position: relative;
+}
+.main1 h3::after{
+    position: absolute;
+    content: "";
+    background-color: #f1eee9;
+    width: 70px;
+    height: 3px;
+    bottom: -110px;
+    left: 110px;
+}
+.main1 h3:hover::after{
+    background-color: #c7b299;
+}
+.main1 h3:hover{
+    color: #c7b299;
+}
+.main1 img:hover{
+    filter: sepia(100%);
+}
+.main1 p{
+    @include p2;
+    width: 270px;
+}
+.main2{
+    text-align: center;
+    background-color: $bgColor2;
+}
+.main2 h2{
+    padding-top: 240px;
+    @include h2;
+}
+.main2 p{
+    display: block;
+    margin: auto;
+    width: 700px;
+    padding: 60px 0 360px;
+    @include p2;
+}
+.main3{
+    height: 150px;
+    background-image: linear-gradient(90deg, #211b19 0%, #4e3326 100%);
+    display: flex;
+    align-items: center;
+}
+.main3 h2{
+    font-size: 28px;
+    color: $Color;
+    font-weight: 400;
+    font-family: "Raleway";
+}
+span{
+    color: $hovCol;;
+}
+.main3 p{
+    font-size: 18px;
+    color: #615855;
+    font-weight: 300;
+}
+.main3 button{
+    margin: auto;
+    @include btn;
+}
+.main4{
+    text-align: center;
+}
+.main4 h2{
+    @include h2;
+    padding-top: 80px;
+}
+.main4 p{
+    display: block;
+    margin: auto;
+    width: 700px;
+    padding-bottom: 40px;
+    @include p2;
+}
+.nav-btn .btn2{
+    @include btn2;
+}
+.nav-btn .btn3{
+    @include btn3;
+}
+.nav-btn button{
+   margin-right: 10px; 
+   margin-bottom: 40px;
+}
+.nav-btn button:hover{
+    background-color: $btnCol;
+    color: $Color;
+    transition: .5s;
+}
+.gallery img{
+    width: 370px;
+    height: 240px;
+    object-fit: cover;
+}
+.galBox{
+    width: 370px;
+    height: 100px;
+    background-color: #fbfaf8;
+    text-align: left;
+    padding: 35px 0 30px 30px;
+    margin: auto;
+    margin-bottom: 30px;
+    position: relative;
+}
+.galBox h3{
+    font-size: 20px;
+    color: $hovCol;
+    font-weight: 500;
+    font-family: "Raleway";
+}
+.galBox h4{
+    font-size: 14px;
+    color: #d1d1d1;
+    font-weight: 300;
+}
+.galBox::before{
+    content: url(../img/arrow-com.png);
+    position: absolute;
+    top: -17px;
+    left: 20px;
+}
+.gallery-item:hover .hover-text{
+    background-color: #352f2d;
+}
+.gallery-item:hover h3{
+    color: #d1d1d1;
+}
+.gallery-item:hover h4{
+    color: $hovCol;
+}
+.gallery-item:hover .galBox::before{
+    content: url(../img/arrow-com-hover.png);
+}
+.main4 button{
+    margin: 10px 0 80px;
+}
+.main5{
+    text-align: center;
+    background-image: url(../img/photo_main_bg.png);
+    object-fit: cover;
+    background-position: 50% 20%;
+}
+.main5 h2{
+    padding-top: 350px;
+    @include h2;
+    color: #ffffff;
+}
+.main5 p{
+    display: block;
+    margin: auto;
+    width: 560px;
+    @include p;
+    color: #ffffff;
+    padding-bottom: 265px;
+}
+.bcgrVid{
+    background-color: $bgColor;
+}
+.iphone-box{
+    display: flex;
+    padding-top: 80px;
+}
+.iphone-text{
+    padding-top: 120px;
+}
+.iphone-text h2{
+    @include h2;
+}
+.iphone-text p{
+    @include p;
+    padding: 15px 0;
+}
+.iphone-text2{
+    margin-left: 60px;
+}
+.iphone-text2 i{
+    width: 21px;
+    height: 21px;
+    font-size: 12px;
+    border-radius: 10px;
+    background-color: $hovCol;
+    color: #fbfaf8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iphone-text2-flex{
+    display: flex;
+    align-items: center;
+}
+.iphone-text2 p{
+    margin: 0 30px;
+    padding: 5px 0;
+}
+.clients{
+    height: 300px;
+    background-image: linear-gradient(90deg, #211b19 0%, #4e3326 100%);
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 200px;
+}
+.clients-item h2{
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: 300;
+    padding-top: 20px;
+}
+.clients-item p{
+    @include p;
+    color: $hovCol;
+    position: relative;
+}
+.clients-item p::after{
+    content: '';
+    height: 2px;
+    width: 30px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 45px;
+    left: 38%;
+}
+.galBox2{
+    width: 370px;
+    height: 180px;
+    border: 1px solid #61585527;
+    padding: 35px 0 30px 30px;
+}
+.galBox2 h3{
+    font-size: 20px;
+    color: #555555;
+    font-weight: 500;
+    font-family: "Raleway";
+}
+.gallery2-item{
+    position: relative;
+}
+.gallery2-item::before{
+    position: absolute;
+    content: '30';
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 300;
+    top: 20px;
+    left: 40px;
+    width: 50px;
+    height: 35px;
+    border-radius: 3px;
+    background-color: #363636;
+    text-align: center;
+}
+.gallery2-item::after{
+    position: absolute;
+    content: 'Sep.';
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Roboto";
+    top: 50px;
+    left: 40px;
+    width: 50px;
+    height: 25px;
+    border-radius: 3px;
+    background-color: #252525;
+    text-align: center;
+}
+.galBox2 h4{
+    @include p2;
+    padding-bottom: 5px;
+}
+.galBox2 a{
+    font-size: 14px;
+    line-height: 20px;
+    color: #c7b299;
+    font-weight: 300;
+}
+.galBox2 a::after{
+    content: url(../img/arrow02-brown.png);
+    padding-left: 10px;
+}
+.gallery2-item img{
+    width: 370px;
+    height: 200px;
+}
+.gallery2 {
+    padding-bottom: 140px;
+}
+.gallery2-item:hover .hover-text{
+    background-color: #352f2d;
+}
+.gallery2-item:hover h3{
+    color: #c7b299;
+}
+.gallery2-item:hover h4{
+    color: #ffffff;
+}
+.gallery2-item:hover .gallery2-item::before{
+    background-color: #c7b299;
+}
+.gallery2-item:hover .gallery2-item::after{
+    background-color: #a48d72;
+}
+.logos-box{
+    background: url(../img/photo12.png) 0 0 no-repeat;
+    width: 100%;
+    height: 490px;
+    background-size: 100%;
+    object-fit: cover;
+    background-position: 100% 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: inset 0px 490px rgba(0,0,0,.7);
+    padding: 0 200px;
+}
+.logos-box img{
+    width: 180px;
+}
+.footer-flex{
+    height: 500px;
+    background-color: #191919;
+}
+.footer-box1{
+    width: 270px;
+    height: 162px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #555555;
+    font-weight: 300;
+}
+.footer-box1 a{
+    padding-bottom: 20px;
+    font-size: 14px;
+    color: #d1d1d1;
+    font-weight: 400;
+}
+.arrw:after{
+    content: url(../img/arrow02-brown.png);
+    padding-left: 10px;
+}
+.pad1{
+    padding-top: 75px;
+}
+.pad2{
+    padding-top: 90px;
+}
+.footer-item h2{
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Raleway";
+    padding-bottom: 10px;
+}
+.footer-item h3{
+    font-size: 12px;
+    line-height: 20px;
+    color: #363636;
+    font-weight: 300;
+    padding-top: 10px;
+}
+.footer-item p{
+    font-size: 14px;
+    line-height: 20px;
+    color: #555555;
+    font-weight: 300;
+}
+// .footer-item p:not(:last-child){
+//     border-bottom: 1px solid #555555;
+// }
+.footer-hover:hover h3{
+    color: #ffffff;
+    cursor: pointer;
+}
+.footer-hover:hover p{
+    color: #c7b299;
+    cursor: pointer
+}
+.hr{
+    border: 1px solid #5555553f;
+}
+.footer-hover span{
+    color: #00bff3;
+}
+.footer-hover2{
+    padding: 0;
+}
+.dFlex img {
+    width: 130px;
+    height: 100px;
+    padding: 5px;
+}
+.dFlex{
+   display: flex;
+}
+.footer-nav{
+    background-color: #101010;
+    height: 110px;
+    display: flex;
+    align-items: center;
+}
+.navFlex{
+    display: flex;
+    justify-content: space-between;
+}
+.navFlex p{
+    margin-bottom: 0;
+    margin-right: 50px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555555;
+    font-weight: 300;
+}
+.navFlex span{
+    color: #bbbbbb;
+}
